@@ -5,6 +5,6 @@ execute as @e[type=fox, nbt=!{Trusted:[]}] unless score @s fox_board matches 0..
 function better_fox:getarmor
 function better_fox:gettotem
 function better_fox:tagarmorcooldown
+function better_fox:regeneration
 #teleport 
-#regeneration
 #drop percent
