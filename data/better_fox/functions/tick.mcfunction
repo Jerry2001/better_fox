@@ -1,1 +1,2 @@
 execute as @e[type= fox, nbt=!{Trusted:[]}] at @s run data merge entity @s {ArmorDropChances:[2.0f, 2.0f, 2.0f, 2.0f], CanPickUpLoot:0b}
+execute as @e[type=minecraft:armor_stand] run data merge entity @s {ShowArms:true}
