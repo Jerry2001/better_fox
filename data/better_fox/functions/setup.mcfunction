@@ -6,5 +6,5 @@ function better_fox:getarmor
 function better_fox:gettotem
 function better_fox:tagarmorcooldown
 function better_fox:regeneration
-#teleport 
+function better_fox:teleportation
 #drop percent
