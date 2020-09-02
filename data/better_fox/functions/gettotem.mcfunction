@@ -1,3 +1,11 @@
+#Check if there is a trusted fox in a distance of from 0 to 2 blocks of a dropped totem. 
+#If there is, spawns an unpickable barrier
+#Adds tag clone to the barrier
+#Set the barrier the same item as the item in the off-hand of the fox
+#Set the off-hand's item of the fox the same as the original totem
+#Set the original totem the same as clone entity
+#Delete clone entity and barrier entity	
+
 schedule function better_fox:gettotem 2s
 execute as @e[type= minecraft:item, nbt={Item:{id: "minecraft:totem_of_undying"}}] at @s if entity @e[type=fox, distance=0..2, nbt=!{Trusted:[]}, tag = sneaky] run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:barrier", Count:1b}, PickupDelay:32767}
 tag @e[type=item,nbt={Item:{id:"minecraft:barrier"}}] add clone

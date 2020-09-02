@@ -1,5 +1,14 @@
-#/summon fox ~ ~ ~ {ArmorItems:[{id:iron_boots, Count:1}, {id:iron_leggings, Count:1}, {id:iron_chestplate, Count:1}, {id:iron_helmet, Count:1}]}
-#/tp @e[type= fox, nbt=!{Trusted:[]}, limit = 1] Asheder
+#Checks every armor stand whether there is a trusted fox in a distance from 0 to 2
+#If the fox has the tag "sneaky", it would swap the armor stand armor with the fox armor 
+#and swap the armor stand's left-hand item to the mouth slot of the fox
+#The algorithm uses the armor stand's right-hand's slot as a temporary slot for swapping
+#At the first chunk of code, the function attempts to swap the armor stand's boots and the fox boots.
+#It first set the armor stand's right hand the same item as the fox boots
+#Then it set the fox's boots the same as the armor stand's boots
+#Finally it set the armor stand's left hand the same as the armor stand's right hand
+#The same process goes for leggings, chest plate, helmet, and right hand
+#After swapping all the item, the function adds a cooldown to the fox before the fox is able to swap armor again
+#The function then delete the item in the right hand of the armor stand
 
 schedule function better_fox:getarmor 1s
 

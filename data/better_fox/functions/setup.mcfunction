@@ -1,3 +1,7 @@
+#Runs when the game is loaded or reloaded.
+#Adds a dummy scoreboard named fox_board and initialize fox_board value of 0 if the score of a trusted fox is not in a range from 0 to 5
+#Call to schedule the function getarmor, gettotem, tagarmorcooldown, regeneration and teleportation
+
 scoreboard objectives add fox_board dummy "Fox Board"
 #scoreboard objectives setdisplay sidebar fox_board
 scoreboard players set one fox_board 1
