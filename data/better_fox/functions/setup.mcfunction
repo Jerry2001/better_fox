@@ -5,8 +5,6 @@
 scoreboard objectives add fox_board dummy "Fox Board"
 #scoreboard objectives setdisplay sidebar fox_board
 scoreboard objectives add fox_control dummy "Fox Control"
-scoreboard objectives add indexing dummy "Better Fox Indexing"
-execute unless score next indexing matches 0.. run scoreboard players set next indexing 0
 execute unless score teleportwithouttag fox_control matches 0..1 run scoreboard players set teleportwithouttag fox_control 0
 scoreboard players set one fox_board 1
 execute as @e[type=fox, nbt=!{Trusted:[]}] unless score @s fox_board matches 0..5 run scoreboard players set @s fox_board 0
