@@ -1,0 +1,3 @@
+#execute as @e[type= fox, nbt={CustomName:'{"text":"on duty"}'}, nbt=!{Trusted:[]}, limit=1, sort=nearest, tag=!hascat] at @s run summon minecraft:cat ~ ~ ~ {Owner:bi, Tags:["clonecat"]}
+#execute as @e[type= fox, nbt={CustomName:'{"text":"on duty"}'}, nbt=!{Trusted:[]}, limit=1, sort =nearest, tag=!hascat] at @s run data modify entity @e[type=cat, sort=nearest, limit=1] Owner set from entity @s Trusted[0]
+execute as @e[type= fox, nbt={CustomName:'{"text":"on duty"}'}, nbt=!{Trusted:[]}, limit=1, sort =nearest, tag=!hascat] at @s run data modify entity @e[type=cat, sort=nearest, limit=1] DeathLootTableSeed set from storage minecraft:fox 

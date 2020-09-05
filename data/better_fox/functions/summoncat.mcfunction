@@ -1,0 +1,3 @@
+execute if score teleportwithouttag fox_control matches 0 as @e[type= fox, nbt={CustomName:'{"text":"on duty"}'}, nbt=!{Trusted:[]}] at @s unless entity @e[type=minecraft:player, distance=0..2] run summon minecraft:cat ~ ~ ~ {Owner:bi, Tags:["clonecat"]}
+execute as @e[type= fox, nbt={CustomName:'{"text":"on duty"}'}, nbt=!{Trusted:[]}] at @s run data modify entity @e[type=cat, sort=nearest, limit=1] Owner set from entity @s Trusted[0]
+#kill @e[type=minecraft:cat, tag=clonecat]
