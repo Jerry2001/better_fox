@@ -1,4 +1,4 @@
-#Gives all trusted fox 1 heart every 1 second
+#Gives all trusted fox 1 heart every 20 seconds
 
 schedule function better_fox:regeneration 20s
 
