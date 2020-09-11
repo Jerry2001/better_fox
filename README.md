@@ -27,5 +27,13 @@ The data pack offer a few in-game functions for players:
 To call a function, type in chat: 
     `/function better_fox:<name of a function>`
 
+## **/trigger**: 
+The functions for ordinary players without op:
+* **Get the fox nearest fox's information:**
+    - `foxinfo`: trigger this scoreboard to get info about the nearest fox's health, armors and weapons
+    
+To trigger a function, type in chat: 
+    `/trigger better_fox:<name of the scoreboard>`
+
 [//]: <> (To show the current modifying status of the creeper, simply type: )
 [//]: <> (`/scoreboard objectives setdisplay sidebar fox_control`)
