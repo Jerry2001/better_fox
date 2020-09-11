@@ -3,7 +3,7 @@ better_fox is a 1.16-compatible Minecraft Java edition data pack that enhances M
 [![IMAGE ALT TEXT HERE](https://i.imgur.com/4x0avii.jpg)](http://www.youtube.com/watch?v=bV0ZE2qu_M0)
 _click the image for preview video_
 ## **Features**:
-**By default, the data pack enable the fox to:**
+**By default, the data pack enables the fox to:**
 - Swap his current armor with the armor on an armor stand if it is in a radius of 2 blocks from that armor stand
 - Swap his current mouth item with the item on an armor stand's left hand if it is in a radius of 2 blocks from that armor stand
 - Pick up a totem of undying if his offhand slot is empty (and of course, he can use it)
@@ -16,7 +16,7 @@ _click the image for preview video_
 - The fox won't teleport if he is being kept in a leash
 
 ## **/function**: 
-The data pack offer a few in-game functions for players:
+The data pack offers a few in-game functions for players:
 * **Change the teleport condition:**
     - `teleportwithouttag`: teleports only foxs with "on duty" name tag   
     - `teleportwithtag`: teleports foxs without the need of "on duty" name tag 
