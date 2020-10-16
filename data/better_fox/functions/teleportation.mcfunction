@@ -3,5 +3,11 @@
 #If teleportwithouttag = 1, the name tag "on duty" is also needed for teleport
 
 schedule function better_fox:teleportation 1t
-execute if score teleportwithouttag fox_control matches 0 as @e[type= fox, nbt={CustomName:'{"text":"on duty"}'}, nbt=!{Trusted:[]}] at @s unless data entity @s Leash unless entity @e[type=minecraft:player, distance=0..13] run tp @p
+
+execute at @p unless block ~ ~ ~ minecraft:air if score teleportwithouttag fox_control matches 0 as @e[type= fox, nbt={CustomName:'{"text":"on duty"}'}, nbt=!{Trusted:[]}] at @s unless data entity @s Leash unless entity @e[type=minecraft:player, distance=0..13] run tp @p
+execute at @p unless block ~ ~-1 ~ minecraft:air if score teleportwithouttag fox_control matches 0 as @e[type= fox, nbt={CustomName:'{"text":"on duty"}'}, nbt=!{Trusted:[]}] at @s unless data entity @s Leash unless entity @e[type=minecraft:player, distance=0..13] run tp @p
+execute at @p unless block ~ ~-2 ~ minecraft:air if score teleportwithouttag fox_control matches 0 as @e[type= fox, nbt={CustomName:'{"text":"on duty"}'}, nbt=!{Trusted:[]}] at @s unless data entity @s Leash unless entity @e[type=minecraft:player, distance=0..13] run tp @p
+execute at @p unless block ~ ~-3 ~ minecraft:air if score teleportwithouttag fox_control matches 0 as @e[type= fox, nbt={CustomName:'{"text":"on duty"}'}, nbt=!{Trusted:[]}] at @s unless data entity @s Leash unless entity @e[type=minecraft:player, distance=0..13] run tp @p
+execute at @p unless block ~ ~-4 ~ minecraft:air if score teleportwithouttag fox_control matches 0 as @e[type= fox, nbt={CustomName:'{"text":"on duty"}'}, nbt=!{Trusted:[]}] at @s unless data entity @s Leash unless entity @e[type=minecraft:player, distance=0..13] run tp @p
+
 execute if score teleportwithouttag fox_control matches 1 as @e[type= fox, nbt=!{Trusted:[]}] at @s unless data entity @s Leash unless entity @e[type=minecraft:player, distance=0..13] run tp @p
